@@ -28,11 +28,34 @@ const initApp = function () {
     console.log('✅ Portfolio inicializado correctamente');
 };
 
-// Esperar a que el DOM esté completamente cargado
+/**
+ * Espera a que los componentes HTML se carguen antes de inicializar
+ */
+const waitForComponents = function() {
+    // Verificar si los componentes ya se cargaron
+    const checkInterval = setInterval(() => {
+        const sidebar = document.querySelector('[data-sidebar]');
+        const navigation = document.querySelector('[data-nav-link]');
+        
+        if (sidebar && navigation) {
+            clearInterval(checkInterval);
+            initApp();
+        }
+    }, 100);
+
+    // Timeout de seguridad (10 segundos)
+    setTimeout(() => {
+        clearInterval(checkInterval);
+        console.warn('Timeout esperando componentes. Inicializando de todos modos...');
+        initApp();
+    }, 10000);
+};
+
+// Esperar a que el DOM y los componentes estén listos
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
+    document.addEventListener('DOMContentLoaded', waitForComponents);
 } else {
-    initApp();
+    waitForComponents();
 }
 
 // Opcional: Exportar función de inicialización
