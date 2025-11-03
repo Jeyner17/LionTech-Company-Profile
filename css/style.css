@@ -1,0 +1,30 @@
+/* ===========================
+   PERSONAL PORTFOLIO - MAIN CSS
+   Estructura Modular
+   =========================== */
+
+/* Importación de módulos CSS en orden */
+
+/* 1. Variables y configuración */
+@import url('./base/variables.css');
+
+/* 2. Reset y estilos base */
+@import url('./base/base.css');
+
+/* 3. Utilidades comunes */
+@import url('./base/utilities.css');
+
+/* 4. Componentes */
+@import url('./components/sidebar.css');
+@import url('./components/navigation.css');
+@import url('./components/modal.css');
+
+/* 5. Páginas */
+@import url('./pages/about.css');
+@import url('./pages/resume.css');
+@import url('./pages/portfolio.css');
+@import url('./pages/blog.css');
+@import url('./pages/contact.css');
+
+/* 6. Responsive */
+@import url('./responsive/responsive.css');
