@@ -1,241 +1,211 @@
 /* ===========================
-   CONTACT PAGE - ESTILOS
+   CONTACT PAGE - ESTILOS ACTUALIZADOS (SIN ÍCONOS)
    =========================== */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #000;
-  color: #fff;
-  min-height: 100vh;
-  padding: 3rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 3rem 2rem;
 }
 
 /* ===========================
    TEXTO DE INTRODUCCIÓN
    =========================== */
 .contact-text p {
-  margin-bottom: 15px;
-  text-align: justify;
-  padding: 0 10px;
-  color: #fff;
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ===========================
    SECCIÓN: EQUIPO
    =========================== */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .team-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.4s ease;
-  backdrop-filter: blur(10px);
-  border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
 }
 
 .team-card:hover {
-  transform: translateY(-10px);
-  border-color: #f16f2c;
-  box-shadow: 0 10px 30px rgba(241, 111, 44, 0.4);
+    transform: translateY(-10px);
+    border-color: #f16f2c;
+    box-shadow: 0 10px 30px rgba(241, 111, 44, 0.4);
 }
 
 .team-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto 1.5rem;
-  border: 1px solid #df3d28;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(223, 61, 40, 0.3);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #df3d28;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(223, 61, 40, 0.5);
 }
 
 .team-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
 }
 
 .team-role {
-  color: #f16f2c;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 450;
+    color: #f16f2c;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 450;
 }
 
 .team-role .role {
-  display: block;
+    display: block;
 }
 
 .team-email {
-  color: #e4792d;
-  font-size: 0.9em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.team-email i {
-  color: #df3d28;
+    color: #e4792d;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 .team-email a {
-  color: #e4792d;
-  text-decoration: none;
-  transition: color 0.3s;
+    color: #e4792d;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .team-email a:hover {
-  color: #f16f2c;
+    color: #f16f2c;
 }
 
 /* ===========================
    SECCIÓN: INFORMACIÓN GENERAL
    =========================== */
 .contact-info {
-  max-width: 1500px;
-  margin: 60px auto;
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 20px;
-  padding: 2.5rem 2rem;
-  backdrop-filter: blur(10px);
+    max-width: 1500px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    backdrop-filter: blur(10px);
 }
 
 .contact-info h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #f16f2c;
-  margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #f16f2c;
+    margin-bottom: 2rem;
 }
 
 /* GRID DINÁMICO Y ADAPTABLE */
 .info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .info-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  transition: all 0.4s ease;
-  border: 2px solid transparent;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
 }
 
 .info-item:hover {
-  transform: translateY(-10px);
-  border-color: #f16f2c;
-  box-shadow: 0 10px 30px rgba(241, 111, 44, 0.4);
+    transform: translateY(-10px);
+    border-color: #f16f2c;
+    box-shadow: 0 10px 30px rgba(241, 111, 44, 0.4);
 }
 
-/* Ícono dentro de las tarjetas */
 .icon-container {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 1rem;
-  background: linear-gradient(135deg, #f16f2c 0%, #df3d28 100%);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 8px 25px rgba(241, 111, 44, 0.4);
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    align-items: center;  /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
 
-.icon-container::before {
-  content: '';
-  position: absolute;
-  inset: 3px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 12px;
-  z-index: 0;
+.icon-container:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8),
+        -4px -4px 8px rgba(50, 50, 50, 0.2),
+        inset 0 0 20px rgba(241, 111, 44, 0.4);
+    transform: translateY(-3px);
 }
 
-.icon-container i {
-  position: relative;
-  z-index: 1;
-  stroke: #f16f2c;
+.icon-container img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+
 }
 
-/* Títulos y texto dentro de las cards */
+/* ===========================
+   TEXTOS EN LAS TARJETAS
+   =========================== */
 .info-item h3 {
-  color: #f16f2c;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+    color: #f16f2c;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .info-item p {
-  color: #e4792d;
-  font-size: 0.95rem;
-  line-height: 1.6;
+    color: #e4792d;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
-
-
-/* ÍCONOS GLOBALES */
-i[data-feather] {
-  width: 30px;
-  height: 30px;
-  color: #f16f2c;
-  stroke: #f16f2c;
-  stroke-width: 2;
-  transition: all 0.3s ease;
-}
-
-/* Ícono dentro de las cards */
-.icon-container i[data-feather] {
-  width: 35px;
-  height: 35px;
-  stroke: #f16f2c;
-}
-
-/* Efecto al pasar el mouse */
-.info-item:hover .icon-container i[data-feather] {
-  stroke: #ff7b33;
-  transform: scale(1.1);
-}
-
 
 /* ===========================
    RESPONSIVE DESIGN
    =========================== */
 @media (max-width: 1024px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .contact-info {
-    padding: 2rem 1.5rem;
-  }
+    .contact-info {
+        padding: 2rem 1.5rem;
+    }
 }
