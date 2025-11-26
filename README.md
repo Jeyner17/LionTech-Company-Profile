@@ -1,4 +1,4 @@
-# 🎨 Personal Portfolio - Arquitectura Modular
+# Personal Portfolio - Arquitectura Modular
 
 > Portfolio personal profesional con estructura 100% modular, diseño responsive y código limpio y organizado.
 
