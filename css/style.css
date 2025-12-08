@@ -21,6 +21,7 @@
 
 /* 5. Páginas */
 @import url('./pages/about.css');
+@import url('./pages/service.css');
 @import url('./pages/resume.css');
 @import url('./pages/portfolio.css');
 @import url('./pages/blog.css');
